@@ -1,4 +1,4 @@
-// Written by Avinoam Nukrai & Idan Shponder, OS course - 2022 spring, Hebrew U
+// Written by Avinoam Nukrai
 
 // Imports
 #include <iostream>
