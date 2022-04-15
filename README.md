@@ -25,6 +25,7 @@ Scheduler (Signals Handler):
   The process running time is measured by the Virtual Timer.
 
 Roound-Robin Algorithm: 
+
   The Round-Robin scheduling policy should work as follows:
   
     • Every time a thread is moved to RUNNING state, it is allocated a predefined number of micro-seconds to run.
