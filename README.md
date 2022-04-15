@@ -29,31 +29,26 @@ scheduling algorithm. States Each thread can be in one of the following states: 
 The process running time is measured by the Virtual Timer.
 
 Roound-Robin Algorithm: 
-
 The Round-Robin scheduling policy should work as follows:
-
   • Every time a thread is moved to RUNNING state, it is allocated a predefined number of micro-seconds to run.
     This time interval is called a quantum.
-    
   • The RUNNING thread is preempted if any of the following occurs:
-  
       a) Its quantum expires.
       b) It changed its state to BLOCKED and is consequently waiting for an event (i.e. some other thread that will resume
       it or after some time has passed – more details below).
       c) It is terminated.
-      
   • When the RUNNING thread is preempted, do the following:
-  
       1. If it was preempted because its quantum has expired, move it to the end of the READY threads list.
-      
       2. Move the next thread in the queue of READY threads to RUNNING state.
-      
   • Every time a thread moves to the READY state from any other state, it is placed at the end of the list of READY threads.
-  
   • When a thread doesn't finish its quantum (as in the case of a thread that blocks itself), 
     the next thread should start executing immediately as if the previous thread finished its quota.
     In the following illustration the quantum was set for 2 seconds, Thread 1 blocks itself
     after running only for 1 second and Thread 2 immediately starts its next quantum.
+    
     ![threads_diagram](https://user-images.githubusercontent.com/64755588/163554770-10c400ce-66c4-4390-b74c-cdd32b896e4e.png)
+    
+The code was tested well, 
+Enjoy!
 
    
