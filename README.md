@@ -16,7 +16,7 @@ Thread State Diagram:
   At any given time during the running of the user's program, each thread in the program is in one of the 
   states shown in the following state diagram - RUNNING, READY, BLOCKED and SLEEP. Transitions from state to 
   state occur as a result of calling one of the library functions, or from elapsing of time. 
-  ![threads_diagram_state](https://user-images.githubusercontent.com/64755588/163553980-d924e197-e17f-43f6-b2e3-5303c05c25b7.png)
+        ![threads_diagram_state](https://user-images.githubusercontent.com/64755588/163553980-d924e197-e17f-43f6-b2e3-5303c05c25b7.png)
 
 
 Scheduler (Signals Handler):
@@ -48,9 +48,8 @@ Roound-Robin Algorithm:
       after running only for 1 second and Thread 2 immediately starts its next quantum.
 
 
-![threads_diagram](https://user-images.githubusercontent.com/64755588/163555390-d8d818f1-7a71-4421-b5c1-eb8e6a0f7845.png)
+   ![threads_diagram](https://user-images.githubusercontent.com/64755588/163555546-8d23e18a-7b9f-49cd-8dc9-2d41d4d2470b.png)
+
 
 The code was tested well, 
 Enjoy!
-
-   
